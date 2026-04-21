@@ -154,6 +154,20 @@ describe('json-schema-validation', () => {
     expect(res2).toMatchSnapshot();
   });
 
+  it('should validate bsonObjectId fields', () => {
+    const validator = micro_schema.createSchemaValidator({
+      type: 'object',
+      properties: {
+        id: { type: 'string', bsonObjectId: true }
+      },
+      required: ['id']
+    });
+
+    expect(validator.validate({ id: '507f1f77bcf86cd799439011' }).valid).toBe(true);
+    expect(validator.validate({ id: 'not-an-objectid' }).valid).toBe(false);
+    expect(validator.validate({ id: '507f1f77bcf86cd79943901' }).valid).toBe(false);
+  });
+
   it('should fail to compile invalid node types', () => {
     try {
       micro_schema.createSchemaValidator({

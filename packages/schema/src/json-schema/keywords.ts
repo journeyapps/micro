@@ -1,4 +1,20 @@
 import * as ajv from 'ajv';
+import { ObjectId } from 'bson';
+
+export const ObjectIdKeyword: ajv.KeywordDefinition = {
+  keyword: 'bsonObjectId',
+  metaSchema: { type: 'boolean' },
+  error: {
+    message: 'should be a valid ObjectId string'
+  },
+  code(context) {
+    const fn = context.gen.scopeValue('func', {
+      ref: ObjectId.isValid,
+      code: ajv._`require('bson').ObjectId.isValid`
+    });
+    context.fail(ajv._`!${fn}(${context.data})`);
+  }
+};
 
 export const BufferNodeType: ajv.KeywordDefinition = {
   keyword: 'nodeType',

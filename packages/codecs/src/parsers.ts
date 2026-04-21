@@ -4,7 +4,7 @@ import * as t from 'ts-codec';
 export const ObjectIdParser = t.createParser<typeof codecs.ObjectId>(codecs.ObjectId._tag, (_, { target }) => {
   switch (target) {
     case t.TransformTarget.Encoded: {
-      return { type: 'string' };
+      return { type: 'string', bsonObjectId: true };
     }
     case t.TransformTarget.Decoded: {
       return { bsonType: 'ObjectId' };
@@ -18,7 +18,7 @@ export const ResourceIdParser = t.createParser<typeof codecs.ResourceId>(codecs.
       return {
         type: 'object',
         properties: {
-          id: { type: 'string' }
+          id: { type: 'string', bsonObjectId: true }
         },
         required: ['id']
       };

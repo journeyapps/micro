@@ -128,6 +128,7 @@ exports[`parsers > should correctly generate ObjectId schemas 1`] = `
     "definitions": {},
   },
   "encoded": {
+    "bsonObjectId": true,
     "definitions": {},
     "type": "string",
   },
@@ -152,6 +153,7 @@ exports[`parsers > should correctly generate ResourceId schemas 1`] = `
     "definitions": {},
     "properties": {
       "id": {
+        "bsonObjectId": true,
         "type": "string",
       },
     },

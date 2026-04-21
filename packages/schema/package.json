@@ -25,6 +25,7 @@
     "@journeyapps-labs/micro-errors": "workspace:^",
     "ajv": "^8.17.1",
     "better-ajv-errors": "^2.0.2",
+    "bson": "^6.10.4",
     "ts-codec": "^1.3.0",
     "zod": "^4.1.12"
   },
