@@ -1,6 +1,6 @@
 ---
-'@journeyapps-labs/micro-codecs': minor
-'@journeyapps-labs/micro-schema': minor
+'@journeyapps-labs/micro-codecs': patch
+'@journeyapps-labs/micro-schema': patch
 ---
 
 Validate ObjectId and ResourceId.id match bson ObjectId format.
