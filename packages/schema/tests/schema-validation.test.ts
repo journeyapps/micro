@@ -2,6 +2,7 @@ import { describe, test, it, expect } from 'vitest';
 
 import base_schema from './fixtures/schema';
 import * as micro_schema from '../src';
+import * as codecs from '@journeyapps-labs/micro-codecs';
 
 const base_validator = micro_schema.createSchemaValidator(base_schema);
 
@@ -154,14 +155,16 @@ describe('json-schema-validation', () => {
     expect(res2).toMatchSnapshot();
   });
 
-  it('should validate bsonObjectId fields', () => {
-    const validator = micro_schema.createSchemaValidator({
-      type: 'object',
-      properties: {
-        id: { type: 'string', bsonObjectId: true }
-      },
-      required: ['id']
-    });
+  it('should validate bsonObjectId fields for ObjectId', () => {
+    const validator = micro_schema.createTsCodecValidator(codecs.ObjectId);
+
+    expect(validator.validate('507f1f77bcf86cd799439011').valid).toBe(true);
+    expect(validator.validate('not-an-objectid').valid).toBe(false);
+    expect(validator.validate('507f1f77bcf86cd79943901').valid).toBe(false);
+  });
+
+  it('should validate bsonObjectId fields for ResourceId', () => {
+    const validator = micro_schema.createTsCodecValidator(codecs.ResourceId);
 
     expect(validator.validate({ id: '507f1f77bcf86cd799439011' }).valid).toBe(true);
     expect(validator.validate({ id: 'not-an-objectid' }).valid).toBe(false);
