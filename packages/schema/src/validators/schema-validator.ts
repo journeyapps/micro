@@ -38,7 +38,7 @@ export const createSchemaValidator = <T = any>(
   try {
     const ajv = new AJV({
       allErrors: !(params.fail_fast ?? false),
-      keywords: [keywords.BufferNodeType],
+      keywords: [keywords.BufferNodeType, keywords.ObjectIdKeyword],
       ...(params.ajv || {})
     });
 
