@@ -1,5 +1,11 @@
 # @journeyapps-labs/micro-codecs
 
+## 1.0.3
+
+### Patch Changes
+
+- 5eec7be: Validate ObjectId and ResourceId.id match bson ObjectId format.
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @journeyapps-labs/micro-schema
 
+## 1.0.3
+
+### Patch Changes
+
+- 5eec7be: Validate ObjectId and ResourceId.id match bson ObjectId format.
+- Updated dependencies [5eec7be]
+  - @journeyapps-labs/micro-codecs@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes
