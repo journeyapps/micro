@@ -1,5 +1,17 @@
 # @journeyapps/micro-streaming
 
+## 2.0.0
+
+### Major Changes
+
+- e39c517: release all packages
+
+### Patch Changes
+
+- Updated dependencies [e39c517]
+  - @journeyapps/micro-errors@2.0.0
+  - @journeyapps/micro-schema@2.0.0
+
 ## 1.0.3
 
 ### Patch Changes
