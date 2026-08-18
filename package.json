@@ -11,7 +11,7 @@
     "ncu": "ncu -u && pnpm recursive exec -- ncu -u"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.31.1",
+    "@changesets/cli": "^3.0.0",
     "@types/node": "^26.1.2",
     "npm-check-updates": "^23.0.0",
     "prettier": "3.9.6",
