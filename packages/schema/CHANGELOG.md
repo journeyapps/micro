@@ -1,5 +1,14 @@
 # @journeyapps/micro-schema
 
+## 1.0.4
+
+### Patch Changes
+
+- 94cabc3: Publish Micro packages under the `@journeyapps` scope after moving the repository to the JourneyApps GitHub organization.
+- Updated dependencies [94cabc3]
+  - @journeyapps/micro-codecs@1.0.4
+  - @journeyapps/micro-errors@1.0.2
+
 ## 1.0.3
 
 ### Patch Changes

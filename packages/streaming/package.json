@@ -3,7 +3,7 @@
   "main": "./dist/index",
   "browser": "./dist/web",
   "typings": "./dist/index",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
