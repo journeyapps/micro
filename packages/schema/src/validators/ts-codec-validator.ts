@@ -1,4 +1,4 @@
-import * as codecs from '@journeyapps-labs/micro-codecs';
+import * as codecs from '@journeyapps/micro-codecs';
 import * as schema_validator from './schema-validator';
 import * as defs from '../definitions';
 import * as t from 'ts-codec';

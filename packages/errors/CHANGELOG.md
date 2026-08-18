@@ -1,4 +1,4 @@
-# @journeyapps-labs/micro-errors
+# @journeyapps/micro-errors
 
 ## 1.0.1
 

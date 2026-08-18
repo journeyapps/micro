@@ -1,5 +1,5 @@
 {
-  "name": "@journeyapps-labs/micro-errors",
+  "name": "@journeyapps/micro-errors",
   "main": "./dist/index",
   "typings": "./dist/index",
   "version": "1.0.1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/journeyapps-labs/micro.git"
+    "url": "https://github.com/journeyapps/micro.git"
   },
   "author": "JOURNEYAPPS",
   "license": "Apache-2.0",
@@ -20,7 +20,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@types/node": "^24.7.0",
-    "vitest": "^3.2.4"
+    "@types/node": "^26.1.2",
+    "vitest": "^4.1.10"
   }
 }

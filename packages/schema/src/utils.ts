@@ -1,4 +1,4 @@
-import * as micro_errors from '@journeyapps-labs/micro-errors';
+import * as micro_errors from '@journeyapps/micro-errors';
 import * as defs from './definitions';
 
 export type Schema = {

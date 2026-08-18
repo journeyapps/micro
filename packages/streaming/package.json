@@ -1,5 +1,5 @@
 {
-  "name": "@journeyapps-labs/micro-streaming",
+  "name": "@journeyapps/micro-streaming",
   "main": "./dist/index",
   "browser": "./dist/web",
   "typings": "./dist/index",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/journeyapps-labs/micro.git"
+    "url": "https://github.com/journeyapps/micro.git"
   },
   "author": "JOURNEYAPPS",
   "license": "Apache-2.0",
@@ -25,14 +25,14 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@journeyapps-labs/micro-errors": "workspace:^",
-    "@journeyapps-labs/micro-schema": "workspace:^",
+    "@journeyapps/micro-errors": "workspace:^",
+    "@journeyapps/micro-schema": "workspace:^",
     "@types/express": "^5.0.3",
     "bson": "^6.10.4"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.20",
     "lodash": "^4.17.21",
-    "vitest": "^3.2.4"
+    "vitest": "^4.1.10"
   }
 }

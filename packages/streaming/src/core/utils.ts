@@ -1,5 +1,5 @@
-import * as micro_schema from '@journeyapps-labs/micro-schema';
-import * as micro_errors from '@journeyapps-labs/micro-errors';
+import * as micro_schema from '@journeyapps/micro-schema';
+import * as micro_errors from '@journeyapps/micro-errors';
 import * as cross_stream from './cross-stream';
 import type * as webstreams from 'stream/web';
 

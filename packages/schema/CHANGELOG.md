@@ -1,4 +1,4 @@
-# @journeyapps-labs/micro-schema
+# @journeyapps/micro-schema
 
 ## 1.0.3
 

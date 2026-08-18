@@ -1,4 +1,4 @@
-# @journeyapps-labs/micro-codecs
+# @journeyapps/micro-codecs
 
 ## 1.0.3
 
