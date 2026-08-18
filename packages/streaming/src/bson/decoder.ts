@@ -7,8 +7,8 @@ export type BSONStreamDecoderParams<T> = {
   deserialize_options?: bson.DeserializeOptions;
   require_terminator?: boolean;
 
-  writableStrategy?: QueuingStrategy<Buffer | undefined>;
-  readableStrategy?: QueuingStrategy<T | undefined>;
+  writableStrategy?: QueuingStrategy<Buffer>;
+  readableStrategy?: QueuingStrategy<T>;
 };
 export const createBSONStreamDecoder = <T = any>(params?: BSONStreamDecoderParams<T>) => {
   const buffer = buffer_array.createReadableBufferArray();

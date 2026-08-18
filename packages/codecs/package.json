@@ -1,5 +1,5 @@
 {
-  "name": "@journeyapps-labs/micro-codecs",
+  "name": "@journeyapps/micro-codecs",
   "main": "./dist/index",
   "typings": "./dist/index",
   "version": "1.0.3",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/journeyapps-labs/micro.git"
+    "url": "https://github.com/journeyapps/micro.git"
   },
   "author": "JOURNEYAPPS",
   "license": "Apache-2.0",
@@ -20,11 +20,11 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@types/node": "^24.7.0",
+    "@types/node": "^26.1.2",
     "bson": "^6.10.4",
     "ts-codec": "^1.3.0"
   },
   "devDependencies": {
-    "vitest": "^3.2.4"
+    "vitest": "^4.1.10"
   }
 }

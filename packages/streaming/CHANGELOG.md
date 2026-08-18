@@ -1,4 +1,4 @@
-# @journeyapps-labs/micro-streaming
+# @journeyapps/micro-streaming
 
 ## 1.0.2
 

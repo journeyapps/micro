@@ -2,7 +2,7 @@ import { describe, test, it, expect } from 'vitest';
 
 import base_schema from './fixtures/schema';
 import * as micro_schema from '../src';
-import * as codecs from '@journeyapps-labs/micro-codecs';
+import * as codecs from '@journeyapps/micro-codecs';
 
 const base_validator = micro_schema.createSchemaValidator(base_schema);
 
