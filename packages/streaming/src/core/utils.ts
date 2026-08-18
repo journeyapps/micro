@@ -34,7 +34,7 @@ export async function* iterableFromReadable<T = any>(readable: ReadableStream<T>
  */
 export const readableFrom = <T = any>(
   iterable: StreamLike<T>,
-  strategy?: QueuingStrategy<T | undefined>
+  strategy?: QueuingStrategy<T>
 ): webstreams.ReadableStream<T> => {
   if (iterable instanceof cross_stream.Readable) {
     return iterable;

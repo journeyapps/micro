@@ -6,8 +6,8 @@ import { ReadableWritablePair } from 'stream/web';
 export type BSONStreamEncoderParams<T> = {
   serialize_options?: bson.SerializeOptions;
   sendTerminatorOnEnd?: boolean;
-  writableStrategy?: QueuingStrategy<T | undefined>;
-  readableStrategy?: QueuingStrategy<Uint8Array | undefined>;
+  writableStrategy?: QueuingStrategy<T>;
+  readableStrategy?: QueuingStrategy<Uint8Array>;
 };
 
 export const createBSONStreamEncoder = <T extends {} = any>(
