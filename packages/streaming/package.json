@@ -27,12 +27,12 @@
   "dependencies": {
     "@journeyapps/micro-errors": "workspace:^",
     "@journeyapps/micro-schema": "workspace:^",
-    "@types/express": "^5.0.3",
-    "bson": "^6.10.4"
+    "@types/express": "^5.0.6",
+    "bson": "^7.3.2"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.20",
-    "lodash": "^4.17.21",
-    "vitest": "^4.1.10"
+    "@types/lodash": "^4.17.25",
+    "lodash": "^4.18.1",
+    "vitest": "^4.1.11"
   }
 }
