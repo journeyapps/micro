@@ -1,5 +1,14 @@
 # @journeyapps/micro-schema
 
+## 2.0.1
+
+### Patch Changes
+
+- 68f4dff: Bump all dependencies
+- Updated dependencies [68f4dff]
+  - @journeyapps/micro-codecs@2.0.1
+  - @journeyapps/micro-errors@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
