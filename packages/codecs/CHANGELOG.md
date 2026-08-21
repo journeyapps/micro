@@ -1,5 +1,11 @@
 # @journeyapps/micro-codecs
 
+## 2.0.1
+
+### Patch Changes
+
+- 68f4dff: Bump all dependencies
+
 ## 2.0.0
 
 ### Major Changes
